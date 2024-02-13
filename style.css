@@ -93,10 +93,17 @@ article{
     .dropdown-content{
         display: none;
     }
-    .dropdown:active .dropdown-content{
+    .dropdown:hover .dropdown-content{
         display: block;
         
     }
+    .dropdown .dropdown-content ul li:hover{
+        background-color: rgb(44, 43, 43);
+        color: white;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+
     .dropdown{
         position: absolute;
         left: 2rem;
@@ -105,10 +112,7 @@ article{
     }
    
         .dropdown-content {
-            display: none;
-            position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
             margin: 10px;
             padding: 10px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -130,5 +134,9 @@ article{
 }
 .text-wrapper article{
     font-size: 1.5rem;
+}
+.getstarted button{
+    padding: 10px 20px;
+    
 }
 }
